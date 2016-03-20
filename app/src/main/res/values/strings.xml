@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PizzaSelector</string>
+    <string name="first_section_title">Toppings</string>
+    <string name="crust_option_one">Thin</string>
+    <string name="crust_option_two">Thick</string>
+    <string name="crust_option_three">Cheese-Filled</string>
+    <string name="crust_option_four">Garlic Crust</string>
+    <string name="size_option_one">Individual</string>
+    <string name="size_option_two">Small</string>
+    <string name="size_option_three">Medium</string>
+    <string name="size_option_four">Large</string>
+    <string name="size_option_five">Extra Large</string>
+    <string name="topping_option_one">Pepperoni</string>
+    <string name="topping_option_two">Ham</string>
+    <string name="topping_option_three">Bacon</string>
+    <string name="topping_option_four">Sausage</string>
+    <string name="topping_option_five">Mushrooms</string>
+    <string name="topping_option_six">Green Peppers</string>
+    <string name="topping_option_seven">Onions</string>
+    <string name="topping_option_eight">Olives</string>
+    <string name="topping_option_nine">Tomatoes</string>
+    <string name="topping_option_ten">Extra Cheese</string>
+    <string name="calculate_button_title">Calculate Final Pizza Cost</string>
+    <string name="third_section_title">Crust</string>
+    <string name="second_section_title">Size</string>
+    <string name="cost_title">The Costs For The Pizza Selected Are As Follows:</string>
+    <string name="cost_breakdown_template">Toppings: (# of toppings) x $0.75 = $\nSize: _______ = $\nCrust Type: __________ = $\nSubtotal: $\nTaxes: $\nTotal: $</string>
+    <string name="sales_button_title">Make Another Pizza</string>
+</resources>
