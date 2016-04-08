@@ -59,10 +59,45 @@ public class PizzaPreferences extends AppCompatActivity {
 
         Intent calculatePizzaCost = new Intent(this, CostCalculator.class);
         boolean[] hasToppings = new boolean[toppings.length];
+        String size = "";
+        String crust= "";
+        boolean garlic= false;
 
         //insert your code here
+        for(int i = 0; i < toppings.length; i++){
+            if(toppings[i].isChecked()){
+                hasToppings[i] = true;
+            }
+        }
+
+        if(rdobtnIndividual.isChecked()){
+            size="individual";
+        } else if (rdobtnSmall.isChecked()){
+            size="small";
+        } else if (rdobtnMedium.isChecked()){
+            size= "medium";
+        } else if (rdobtnLarge.isChecked()) {
+            size = "large";
+        } else if (rdobtnExtraLarge.isChecked()) {
+            size = "extra-large";
+        }
+
+        if(rdobtnThin.isChecked()){
+            crust="thin";
+        } else if (rdobtnThick.isChecked()){
+            crust="thick";
+        } else if (rdobtnCheeseFilled.isChecked()){
+            crust= "cheese-filled";
+        }
+
+        if (chkboxGarlic.isChecked()) {
+            garlic= true;
+        }
 
         calculatePizzaCost.putExtra("TOPPINGS_BOOLEANS", hasToppings);
+        calculatePizzaCost.putExtra("PIZZA_SIZE", size);
+        calculatePizzaCost.putExtra("CRUST_TYPE", crust);
+        calculatePizzaCost.putExtra("GARlIC_CRUST", garlic);
         startActivityForResult(calculatePizzaCost, 0);
     }
 
